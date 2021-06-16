@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home6</title>
+    <script src="./script6.js"></script>
+  </head>
+  <body>
+    <!-- task1
+    <div id="test">First</div>
+  
+  <script> 
+      document.getElementById('test').innerHTML = 'Not last name';   
+      document.querySelector('#test').innerHTML = 'Finally Last';
+  
+        </script>
+      -->
+
+    <!--task2
+    <img class="image" src="dog.jpg">
+        <script>
+            let a = document.getElementsByClassName('image');
+            a.src = 'cat.jpg';
+            alert (a);
+        </script>
+      -->
+
+    <!--task3
+        <h2>Article header</h2>      
+          <div id="text">
+            <p>First paragraph</p>
+            <p>Second paragraph</p>
+            <p>Third paragraph</p>
+          </div>
+        <p>Another text</p>
+    
+        <script>
+            let k = document.querySelectorAll( 'div p');
+            for (let i = 0; i < k.length; i++) {
+              alert ('Selector ' + i + ': ' + k[i].innerHTML);
+            }
+
+        </script>
+      -->
+
+    <!---task4
+      <ul id="list"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul>
+      
+      <script>
+       // let list = document.getElementById("list");
+       // let list1 = list.childNodes[0].innerHTML;
+       // let list5 = list.childNodes[4].innerHTML;
+      //  let list2 = list.childNodes[1].innerHTML;
+      //  let list4 = list.childNodes[3].innerHTML;
+      //  let list3 = list.childNodes[2].innerHTML;
+        
+let list1 = document.querySelector('#list').firstChild.innerHTML;
+let list5 = document.querySelector('#list').lastChild.innerHTML;
+let list2 = document.querySelector('#list').firstChild.nextSibling.innerHTML;
+let list4 = document.querySelector('#list').lastChild.previousSibling.innerHTML;
+let list3 = document.querySelector('#list').lastChild.previousSibling.previousSibling.innerHTML; 
+
+
+           console.log (list)
+           alert(list1)
+           alert (list5)
+           alert(list2)
+           alert(list4)
+           alert(list3) 
+          
+        </script>
+        --->
+    <!---task5
+        <h1>I'am a big header!!!</h1>
+        <div id="myDiv">
+            <p>First paragraph</p>
+            <p>Second paragraph</p>
+            <p>Third paragraph</p>
+            <p>Fourth paragraph</p>
+        </div>
+        <ul id="myList">
+            <li>Make</li>
+            <li>me</li>
+            <li>horizontal!</li>
+        </ul>
+        <span>Make me invisible, please!</span>
+ 
+        <script>
+          document.body.children[0].style.background = 'green';
+          document.getElementById('myDiv').children[0].style.fontWeight = '700';
+          document.getElementById('myDiv').children[1].style.color = 'red';
+          document.getElementById('myDiv').children[2].style.textDecoration = 'underline';
+          document.getElementById('myDiv').children[3].style.fontStyle = 'Italic';
+          document.querySelector('#myList').style.listStyle = 'none';
+          document.querySelector('#myList').style.display = 'flex'
+          document.querySelector('span').style.display = 'none'
+      
+        </script>
+        --->
+
+        <!--task6
+
+    <input type="text" id="input1" value="Text1" />
+    <input type="text" id="input2" value="Text2" />
+
+    <script>
+      let info1 = prompt("", "");
+      let info2 = prompt("", "");
+
+      let input1 = document.querySelector("#input1");
+      let input2 = document.querySelector("#input2");
+
+      input1.value = info1;
+      input2.value = info2;
+
+      let result1 = input1.value;
+      let result2 = input2.value;
+
+      console.log(result1);
+      console.log(result2);
+
+      input1.value = result2;
+      input2.value = result1;
+    --->
+
+    <!--
+		  <body>
+		  <main class="mainClass check item"> 	
+		        <div id="myDiv">
+           <p>First paragraph</p>           
+         </div>
+       </main> 
+	    </body>
+
+      
+   <script>
+      const x = 100;
+      document.body.innerHTML = 
+      ` <main class="mainClass check item"> 	
+		        <div id="myDiv"> ${x}
+           <p>First paragraph</p>           
+         </div>
+       </main> `
+    
+    </script>
+  </body>
+</html>
+--> 
