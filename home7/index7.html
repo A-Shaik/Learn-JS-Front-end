@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+   <!--task1
+   <script> 
+        let openWindow = window.open("", "", "width = 300, height=300");
+        setTimeout(function () {
+        openWindow.resizeTo(500, 500);
+      }, 2000);
+      setTimeout(function () {
+         openWindow.moveTo (200, 200); 
+      }, 4000);
+      setTimeout (function () {
+          openWindow.close();
+      }, 6000);
+    </script>
+    --->
+
+   <!--task2
+    <p id ='text'>I learning JavaScript events!</p> 
+<div>
+	<button>Change style!</button>
+</div>
+
+<script>
+    
+function changeCSS () {
+
+    let text = document.getElementById ('text');
+    text.style.color = 'orange';
+    text.style.fontSize = '20 px';
+    text.style.fontFamily = 'Italic';
+
+
+}
+    let button = document.getElementsByTagName('button');
+    button[0].addEventListener('click', changeCSS);
+
+</script>
+-->
+
+
+
+<!--task3
+<div style ="display:flex;justify-content: space-between;">
+    <button onclick = 'changeBackground("blue")'>First but one ckick blue</button>
+    <button  ondblclick='changeBackground("pink")'>Second double click pink</button>
+    <button  onmousedown='changeBackground("brown")', onmouseup='changeBackground("white")'>Third click&hold bown+white</button>
+    <a href="https://learn.javascript.ru/introduction-browser-events"
+     onmouseover="changeBackground('yellow')"
+     onmouseout="changeBackground('white')">learn.javascript.ru</a>
+</div>
+    
+<script>
+
+function changeBackground (color){
+    document.body.style.background = color;
+}
+</script>
+--->
+
+
+
+<!--task4
+<form>
+    <select id="choice"> 
+       <option>Peter</option>
+       <option>John</option>
+       <option>Alise</option>
+        <option>Alex</option>
+        <option>Iren</option>
+    </select>
+    <input type="button" id="unique" value="Choose and delete">
+</form>
+<script>
+
+    document.getElementById('unique').addEventListener('click', deleteName);
+
+    function deleteName() {
+        let k = document.getElementById("choice");
+        k.remove(k.selectedIndex)
+        console.log (k)
+    }
+    
+</script>
+--->
+
+
+
+<!---task5
+<button id="btn">Live button!!!</button>
+<p id="message"></p>
+
+<script>
+
+let k =document.querySelector('#btn');
+k.addEventListener('click', clickFunction);
+k.addEventListener('mouseover', overFunction);
+k.addEventListener('mouseout', outFunction);
+
+function clickFunction() {
+    document.querySelector('#message').innerHTML += 'I was pressed <br>';
+}
+
+function overFunction() {
+    document.querySelector('#message').innerHTML += 'Mouse on me <br>';
+}
+
+function outFunction() {
+    document.getElementById('message').innerHTML +='Mouse out of me <br>';
+}
+--->
+
+
+
+<!--task6
+<script>
+    function fullSize() {
+        let width = window.width;
+        let height = window.height;
+        let size = 'Width :' + width + '|' + 'Height :' + height;
+        alert (size)
+    }
+    window.addEventListener('resize', fullSize);
+</script>
+--->
+  </body>
+</html>
