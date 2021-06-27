@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+   
+   <!--task1
+   <script>
+      let regexp = /[A-Z]^/;
+      let str1 = "regexpp";
+      let str2 = "RegExp";
+      let str3 = "aGGGGGGG";
+
+      function check(str) {
+        if (regexp.test(str) == true) {
+          console.log("Strings starts with uppercase character ");
+        } else if (regexp.test(str) == false) {
+          console.log("Strings not starts with uppercase character ");
+        }
+      }
+      console.log(check(str3));
+    </script>
+    -->
+
+    <!--task2
+    <script>
+        let contact = 'Qmail2@gmail.com';
+        let contact2 = '!*$%#';
+        let regexp = /\w/;
+
+        function checkEmail (mail) {
+            return regexp.test(mail);
+        }
+       console.log (checkEmail(contact));
+    </script>
+     -->
+
+     <!--task3 я з цим намучився а на виході всерівно "0"
+        Якщо не э можливість, дайте будь-ласка фідбек на це завдання бо
+        в мене стійке враження що я не бачу якогось квантифікатора або не 
+        не знаю про існування додаткового символу)
+     <script>
+     let str = 'cdbBdbsbz';
+     let regexp =/(db+d)|(b+)/i;
+     console.log (str.match(regexp))
+     
+     </script>
+    -->
+    <!--task4
+    <script>
+        console.log('Java Script'.replace (/java script/gi, 'Script, Java'));
+    </script>
+    -->
+    
+    <!--task5
+    <script>
+
+    function checkBankCardId(str) {
+
+        let cardId = /^\d{4}-\d{4}-\d{4}-\d{4}$/;
+        let checking = cardId.test(str);
+
+        if (checking == true) {
+            console.log ('Bank card is valid')
+        } else {
+            console.log ('Bank card isnt valid')
+        }
+    }
+        checkBankCardId('ewee-ewe3-gdgd-749!')
+        checkBankCardId('5453-5353-2122-9807')
+    </script>
+    -->
+
+    <!--task6
+    <script>
+        function checkEmail (str) {
+            let regExp = /^\w+([-]?\w+)*(@\w+)(\.\w{2,3})+$/;
+            let checking = regExp.test(str);
+            
+            if (checking == true) {
+                console.log ('Email correct')
+            } else {
+                console.log ('Email isnt correct.Try one more time')
+            }
+        }
+
+        checkEmail ('sha-saaj123@ukr.ua')
+        checkEmail ('te-st_11@gmail.com')
+        checkEmail ('gosjg@233@sffs.com')
+    </script>
+    -->
+    <!--task7
+    <script>
+        function checkLogin (userLogin) {
+            let regexp = /^[a-z]{1}[\w\.]{1,10}$/ig
+            let numbersOfLogin =/[0-9\.]/g;
+            let checkNumbers = userLogin.match(numbersOfLogin);
+           console.log ( checkNumbers )
+
+            if (regexp.test(userLogin) == true) {
+                console.log ('Login is correct')
+            } else { console.log ('Login isnt correct')
+            }
+            
+        }
+
+        checkLogin ('ee1.1ret3');
+        checkLogin ('ee1*1ret3');
+        checkLogin ('Eree1.231')
+    </script>
+    -->
+
+  </body>
+</html>
